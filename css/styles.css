@@ -92,4 +92,12 @@ svg{
         border-right: 1px solid white;
         margin-right: 10px;
     }
+
+    .navigation-bar{
+        background-color: purple;
+    }
+
+    .main-content{
+        background: gray;
+    }
 }
