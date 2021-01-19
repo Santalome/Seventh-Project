@@ -1,7 +1,7 @@
 const alertBanner = document.querySelector(".alert");
 const bannerHtml = `<div class="alert-banner">
-        <p><strong>Alert:</strong> You have <strong>6</strong> overdue tasks to complete</p >
-        <p class="alert-banner-close">x</p>
+        <p class="alert-banner-text"><strong>Alert:</strong> You have <strong>6</strong> overdue tasks to complete</p>
+        <p class="alert-banner-close"><strong>x</strong></p>
         </div >`;
 
 alertBanner.innerHTML = bannerHtml;
