@@ -1,3 +1,8 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
 .widget-container-full, .widget-container-half{
     width: 95vw;
 }
@@ -68,6 +73,7 @@ svg{
     .header h1{
         font-size: 30px;
         float: left;
+        padding-top: 15px;
     }
 
     .header div{
@@ -79,25 +85,40 @@ svg{
         border-radius: 100px;
         width: 30px;
         margin-right: 10px;
+        margin-bottom: 11px;
     }
 
     .header h3{
         float: right;
         margin-right: 10px;
+        margin-top: 4px;
     }
 
     .header svg{
         width: 30px;
         padding-right: 15px;
-        border-right: 1px solid white;
+        border-right: 1px solid gray;
         margin-right: 10px;
+        margin-bottom: 10px;
     }
 
     .navigation-bar{
         background-color: purple;
+        width: 70px;
+    }
+
+    .navigation-bar a{
+        display: flex;
+        justify-content: center;
+        margin-top: 35px;
+    }
+
+    .navigation-bar a img{
+        width: 50%;
+        
     }
 
     .main-content{
-        background: gray;
+        margin-left: 30px;
     }
 }

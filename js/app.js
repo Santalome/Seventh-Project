@@ -2,7 +2,7 @@ const alertBanner = document.querySelector(".alert");
 const bannerHtml = `<div class="alert-banner">
         <p><strong>Alert:</strong> You have <strong>6</strong> overdue tasks to complete</p >
         <p class="alert-banner-close">x</p>
-        </div >"`;
+        </div >`;
 
 alertBanner.innerHTML = bannerHtml;
 alertBanner.addEventListener('click', (e) => {
