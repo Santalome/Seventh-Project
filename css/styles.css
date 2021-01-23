@@ -5,6 +5,7 @@
 
 .clearfix {
   overflow: auto;
+  clear: both;
 }
 
 .widget-container-full, .widget-container-half{
@@ -38,6 +39,11 @@ svg{
 }
 
 @media (min-width: 768px){
+
+    *{
+        font-size: 1em;
+    }
+
     .grid-container{
         grid-template-columns: 55px 1fr;
         grid-template-areas: 
@@ -130,6 +136,7 @@ svg{
         float: left;
         line-height: 70px;
         color: gray;
+        font-size: 1.4em;
     }
 
     .main-header-search{
@@ -154,6 +161,7 @@ svg{
         margin-top: 22px;
         margin-bottom: 22px;
         margin-right: 22px;
+        border-radius: 8px;
     }
 
     .alert-banner-text{
@@ -173,6 +181,63 @@ svg{
     .main-content{
         padding-left: 50px;
         
+    }
+
+    .traffic-header h3{
+        text-transform: uppercase;
+        float: left;
+    }
+
+    .traffic-nav li{
+        list-style: none;
+        float: right;
+        padding-left: 20px;
+        margin-bottom: 30px;
+        font-weight: bold;
+        font-size: 0.8em;
+    }
+
+    .traffic-nav li:first-child{
+        padding-right: 25px;
+    }
+
+    .daily{
+        float: left;
+        margin-top: 30px;
+    }
+
+    .daily h3{
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        font-size: 1em;
+    }
+
+    .mobile{
+        float: right;
+        margin-top: 30px;
+    }
+
+
+    .mobile h3{
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        font-size: 1em;
+    }
+
+    .members{
+        float: left;
+    }
+
+    .activity{
+        float: right;
+    }
+
+    .message{
+        float: left;
+    }
+
+    .settings{
+        float: right;
     }
 
     

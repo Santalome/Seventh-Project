@@ -30,7 +30,7 @@ const trafficData = {
 };
 
 const trafficOptions = {
-    aspectRatio: 2.5,
+    aspectRatio: 4,
     animation: {
         duration: 0
     },
@@ -59,10 +59,11 @@ const dailyData = {
         label: '# of Hits',
         data: [75, 115, 175, 125, 225, 200, 100],
         backgroundColor: '#7477BF',
-        borderWidth: 1
+        borderWidth: 7
     }]
 };
 const dailyOptions = {
+    aspectRatio: 2,
     scales: {
         yAxes: [{
             ticks: {
