@@ -18,7 +18,7 @@ svg{
 
 .grid-container{
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
         "header",
@@ -36,6 +36,7 @@ svg{
 
 .main-content{
     grid-area: main;
+    margin-left: 10px;
 }
 
 @media (min-width: 768px){
@@ -45,7 +46,7 @@ svg{
     }
 
     .grid-container{
-        grid-template-columns: 55px 1fr;
+        grid-template-columns: 1fr;
         grid-template-areas: 
             "header header"
             "navigation main";
@@ -178,11 +179,6 @@ svg{
         line-height: 40px;
     }
 
-    .main-content{
-        padding-left: 50px;
-        
-    }
-
     .traffic-header h3{
         text-transform: uppercase;
         float: left;
@@ -198,7 +194,7 @@ svg{
     }
 
     .traffic-nav li:first-child{
-        padding-right: 25px;
+        padding-right: 10px;
     }
 
     .daily{
@@ -224,12 +220,104 @@ svg{
         font-size: 1em;
     }
 
-    .members{
+    .daily-content{
+        border-right: 1px solid gray;
+    }
+
+    .daily h3{
+        padding-top: 15px;
+    }
+
+    .mobile h3{
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+
+    .widget-container-half{
+        padding-bottom: 20px;
+    }
+
+    hr{
+        color: gray;
+    }
+
+    .social-container{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .social-container h3{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    .social-wrapper{
         float: left;
+        border: 1px solid gray;
+        width: 250px;
+        height: 100px;
+        margin-right: 45px;
+        display: flex;
+        align-items: center;
+        border-radius: 8px;
+    }
+
+    .social-image,
+    .social-text{
+        margin: 0px auto;
+    }
+
+    .social-wrapper svg{
+        background: rgb(115, 119, 191);
+        width: 100%;
+        border-radius: 50%;
+
+    }
+
+    .social-image{
+        width: 30%;
+        float: left;
+    }
+
+    .social-text{
+        float: right;
+    }
+
+    .social-name{
+        color: rgb(115, 119, 191);
+        font-weight: bold;
+        justify-content: space-between;
+        font-size: 1.5em;
+    }
+
+    .social-number{
+        font-size: 3em;
+    }
+
+
+    .members{
+        margin-top: 30px;
+        width: 45%;
+        float: left;
+    }
+
+    .members-container,
+    .activity-container{
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .profile-image{
+        width: 60px;
+        border-radius: 50%;
     }
 
     .activity{
         float: right;
+        margin-top: 30px;
+        width: 45%;
     }
 
     .message{
